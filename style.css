@@ -4,9 +4,22 @@
     margin: 0;
     padding: 0;
 }
+#btn-back-to-top 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 body
 {
     font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .navbar
 {
@@ -109,19 +122,33 @@ body
 }
 .carousel-inner
 {
-    height: 500px;
+    min-height: 550px;
+    max-height: fit-content;
+    margin-bottom: 50px;
 }
-/* .carousel-inner .carousel-item .row
+.carousel-inner .carousel-item .row
 {
     margin-left: 40px;
     margin-right: 40px;
-} */
+}
 .carousel-indicators,
 .carousel-control-next,
-.carousel-control-prev , .carousel-indicators {
+.carousel-control-prev , .carousel-indicators
+{
     filter: invert(100%);
 }
-
+.carousel-inner .carousel-item 
+{
+    transition: transform 2s ease-in-out;
+}
+.skills-img
+{
+    max-width:150px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*-----Correlation Sessions Section-----*/
 
 #correlationSessions
@@ -152,59 +179,20 @@ body
     font-size: 32px;
     color: #f4a7bb;
 }
-#correlationSessions .accordion-button::after 
-{
-    background-image: initial;
-    float: right;
-}
-#correlationSessions .accordion-header .accordion-button .bi-plus
-{
-    size: 50px;
-}
-#correlationSessions .accordion-button:not(.collapsed)::after
-{
-    background-image: initial;
-    
-}
-
-
-
-
-/* #correlationSessions .accordion-button.collapsed::after
-{
-    content: '\002B';
-    color: #000 !important;
-}
 #correlationSessions .accordion-button::after
 {
-    content: '\2212';
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 18px;
-    position: absolute !important;
-    background: transparent;
-    color: #f4a7bb;
-} */
-/* #correlationSessions .accordion-button::before
+    background-image: url(images/icons/dash-square.svg);
+    filter: invert(76%) sepia(5%) saturate(2565%) hue-rotate(297deg) brightness(95%) contrast(101%);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#correlationSessions .accordion-button.collapsed::after
 {
-    content:'';
-    height:25px;
-    width: 25px;
-    position: absolute;
-    background: #f4a7bb;
-    z-index: 1;
-    transform: rotate(45deg);
-    left: 30px;
-    top: 60px;
-} */
-
-
-
-
-
+    background-image: url(images/icons/plus-square.svg);
+    filter: invert(0%) sepia(7%) saturate(7471%) hue-rotate(74deg) brightness(93%) contrast(106%);
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .displayBar
 {
@@ -215,6 +203,18 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+.displayBarMini
+{
+    content: '';
+    background: #000;
+    height: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     display: block;
 }
 /*-----Contact Section-----*/
