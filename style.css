@@ -226,5 +226,28 @@ body
 #contact
 {
     background-color: #000;
-    margin-top: 250px;
+    color: #f4a7bb;
+}
+.logo
+{
+    min-width: none;
+    max-width: 180px;
+}
+.footer-box
+{
+    padding: 20;
+    overflow-wrap: anywhere;
+}
+.footer-box .bi
+{
+    margin-right: 8px;
+    font-size: 25;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+}
+#contact .footer-box  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
