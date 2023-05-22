@@ -1,0 +1,225 @@
+*
+/*-----Navigation Bar Section-----*/
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #000,#f4a7bb);
+    padding: 0 !important;
+    color: #fff !important;
+}
+.navbar-brand img
+{
+    height: 60px;
+    margin-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #000 !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.nav-item .dropdown-menu
+{
+    border: 1px;
+    background-color: transparent;
+}
+.dropdown-menu li a
+{
+    color: #000 !important;
+    font-weight: 600;
+    text-align: right;
+}
+.navbar .navbar-toggler
+{
+    border: 0px;
+    background-color: transparent;
+}
+.bi-three-dots
+{
+    color: #000;
+}
+/*-----Banner Section-----*/
+#banner
+{
+    background-image: linear-gradient(to right, #000,#f4a7bb);
+    color: #fff !important;
+}
+.title-1
+{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.title-2
+{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+.img-fluid
+{
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom-img
+{
+    width: 100%;
+}
+/*-----About Section-----*/
+.me-img
+{
+    max-width:250px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+.title
+{
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    text-align: center;
+}
+.title::after
+{
+    content: '';
+    background: #f4a7bb;
+    height: 5px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+}
+.carousel-inner
+{
+    height: 500px;
+}
+/* .carousel-inner .carousel-item .row
+{
+    margin-left: 40px;
+    margin-right: 40px;
+} */
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(100%);
+}
+
+/*-----Correlation Sessions Section-----*/
+
+#correlationSessions
+{
+    background-color: #f4a7bb;
+}
+.top-img
+{
+    width: 100%;
+}
+#correlationSessions .accordion 
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: #000;
+    --bs-accordion-active-bg: #000;
+}
+#correlationSessions .accordion-button
+{
+    box-shadow: none;
+    font-size: 32px;
+    color: #000;
+}
+#correlationSessions .accordion-button:not(.collapsed)
+{
+    box-shadow: none;
+    font-size: 32px;
+    color: #f4a7bb;
+}
+#correlationSessions .accordion-button::after 
+{
+    background-image: initial;
+    float: right;
+}
+#correlationSessions .accordion-header .accordion-button .bi-plus
+{
+    size: 50px;
+}
+#correlationSessions .accordion-button:not(.collapsed)::after
+{
+    background-image: initial;
+    
+}
+
+
+
+
+/* #correlationSessions .accordion-button.collapsed::after
+{
+    content: '\002B';
+    color: #000 !important;
+}
+#correlationSessions .accordion-button::after
+{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    right: 15px;
+    top: 18px;
+    position: absolute !important;
+    background: transparent;
+    color: #f4a7bb;
+} */
+/* #correlationSessions .accordion-button::before
+{
+    content:'';
+    height:25px;
+    width: 25px;
+    position: absolute;
+    background: #f4a7bb;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 30px;
+    top: 60px;
+} */
+
+
+
+
+
+
+.displayBar
+{
+    content: '';
+    background: #000;
+    height: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+}
+/*-----Contact Section-----*/
+#contact
+{
+    background-color: #000;
+    margin-top: 250px;
+}
